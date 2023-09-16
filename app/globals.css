@@ -1,27 +1,362 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --lemmon : #fdf9b4;
+  --pastal_green: #d1f3c8;
+  --pastal_bule:#c3f7e7;
+  --pastal_orange:#f9c374;
+  --pastal_pinke:#f7b2b0;
+  --bule: #b6e3f9;
+--pastal_red:#ffa794;
+}
+ 
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.main_wapper{
+  width: 100vw;
+  height: 100vh;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: space-between;
+
+  
+}
+.left_part{
+  width: 24vw;
+  height: 96vh;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow:   6px 6px 0px 0px var(--bule);
+  margin-top: 2vh;
+}
+.left_div{
+  width: 93%;
+  height: 95%;
+  background-color: whitesmoke;
+ 
+  border: 1px solid black;
+  box-shadow:   5px 5px 0px 1px var(--pastal_red);
+  margin-top: 2vh;
+  margin-top:3%;
+  margin-left: 3%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+}
+.top_heading{
+  width:calc(100% + 1px) ;
+  border: 1px solid black;
+  background-color:#ffa794;
+  font-size:28px;
+  text-align: center;
+}
+.letf_lower{
+  max-height: 89%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color:aliceblue;
+  text-align: center;
+}
+.nav_bar{
+  width: 80%;
+  background-color:var(--bule);
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-left: 10%;
+  border: 1px solid black;
+  /* margin-bottom: 10px; */
+
+
+}
+.lower_heading{
+  font-size:1.3rem;
+  font-weight: 600;
+}
+
+.complete_task_div{
+  /* height: 60%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  overflow-y: scroll;
+}
+
+.complete_task_div::-webkit-scrollbar{
+  display: none;
+}
+
+.complete_task{
+  width: 90%;
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+  background-color:var(--pastal_green);
+  /* background-color: #fff5b6f2; */
+  border: 1px solid black;
+
+  
+}
+.complete_heading{
+  font-size: 0.9rem;
+}
+/* .star_img{
+ 
+
+} */
+
+
+/*XXXX======XXXX Right Side of body XXXXXXXXXX=======XXXXXXXXXX    */
+
+
+.right_part{
+  display:flex;
+  align-content: flex-start;
+  width: 75vw;
+  height: 100vh;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  flex-wrap: wrap;
+  background-color: antiquewhite;
+  gap: 1.1vw;
+  overflow-y: scroll;
+
+}
+.right_part::-webkit-scrollbar{
+  display: none;
+}
+.to_do_card{
+  width: 23.5vw;
+  border: 1px solid black;
+  height: 35vh;
+  background-color: white;
+  box-shadow:   6px 6px 0px 0px var(--bule);
+}
+.render_card_body{
+  width: calc(100%);
+  height:calc(79%);
+  background-color: white;
+  padding: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+}
+.render_card_body::-webkit-scrollbar{
+  display: none;
+}
+
+.input_card{
+  box-shadow:   6px 6px 0px 0px var(--bule);
+}
+.form_card_header,.card_header{
+  display: flex;
+  align-items: center;
+  justify-content:flex-start;
+  height: 21%;
+  background-color:var(--bule);
+  border: 1px solid black;
+}
+
+
+.mini_btns_div{
+  display: flex;
+  gap: 8px;
+  margin-left: 10px;
+  margin-right:2px ;
+  
+
+}
+.circle-btn{
+  width: 14px;
+  height: 14px;
+  border: 1px solid black;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.card_heading{
+  font-size: 1.2rem;
+  text-align: center;
+  width: calc(100% - 64px);
+}
+.title_area{
+  font-size: 1.1rem;
+  width: calc(100% - 73px);
+  height:calc(100% - 5px);
+  border: 1px solid black;
+  background-color: var(--bule);
+  padding: 5px;
+  
+}
+
+
+/*form's mini circle btns css  */
+.btn1{
+font-size: 11px;
+
+background-color: var(--lemmon);
+
+}
+.btn2{
+  background-color: var(--pastal_pinke);
+}
+.btn3{
+  background-color: var(--pastal_green);
+
+}
+
+.form_card_body,.card_body{
+  width: 100%;
+  height:78.9%;
+  background-color: white;
+  position: relative;
+  
+}
+textarea{
+  margin-top: 1.9px;
+  margin-left: 1px;
+  padding: 10px;
+  width: calc(100% - 2.5px);
+  height:calc(100% - 2.9px);
+  background-color: white;
+  border: none;
+  
+}
+
+
+
+
+/* .form_card_body{
+
+} */
+/*  making add img bczs  i do't have net connection 😁 */
+
+.add_img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% ,-50%);
+  width: 4rem;
+  height: 4rem;
+  border: 4px solid black;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  /* display: none; */
+
+}
+.min_line1{
+  width: 90%;
+  height:8px;
+  background-color: black;
+  
+  border-radius: 10px;
+
+}
+.min_line2{
+width: 90%;
+height:8px;
+background-color: black;
+border-radius: 10px;
+transform: rotate(90deg);
+position: absolute;
+}
+
+/* style render card  */
+/* .render_card{
+} */
+.funtion_btn1{
+  background-color: var(--pastal_red);
+}
+.funtion_btn2{
+  background-color: var(--lemmon);
+  
+}
+.funtion_btn3{
+  background-color: var(--pastal_bule);
+}
+  
+
+
+
+/* star btn animation */
+.star_div{
+height: 43px;
+
+}
+.star_img{
+  height: 100%;
+  width: 100%;
+  animation: shake 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0) rotate(-1deg);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0) rotate(2deg);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-3px, 0, 0) rotate(-3deg);
+  }
+  40%,
+  60% {
+    transform:  translate3d(3px, 0, 0) rotate(3deg);
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+
+
+/* 
+.form-div{
+  display: flex;
+  gap: 40px;
+  
 }
+.main_wapper{
+  width: 100vw;
+
+}
+.cards{
+   display: flex;
+   gap: 50px;
+  background-color: rosybrown;
+   flex-wrap: wrap;
+   
+}
+.card{
+  border-radius:10px ;
+  background-color: skyblue;
+  padding: 20px;
+  position: relative;
+}
+.cards h1{
+  font-size: 1.3rem;
+  text-transform: capitalize;
+
+}
+.card button{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+ */
+
