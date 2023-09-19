@@ -24,10 +24,9 @@ body {
   height: 100vh;
   background-color: antiquewhite;
   display: flex;
-  justify-content: space-between;
-
-  
+  justify-content: space-between; 
 }
+
 .left_part{
   width: 24vw;
   height: 96vh;
@@ -36,11 +35,11 @@ body {
   box-shadow:   6px 6px 0px 0px var(--bule);
   margin-top: 2vh;
 }
+
 .left_div{
   width: 93%;
   height: 95%;
   background-color: whitesmoke;
- 
   border: 1px solid black;
   box-shadow:   5px 5px 0px 1px var(--pastal_red);
   margin-top: 2vh;
@@ -48,9 +47,10 @@ body {
   margin-left: 3%;
   display: flex;
   flex-direction: column;
+  overflow-y: hidden;
   gap: 24px;
-
 }
+
 .top_heading{
   width:calc(100% + 1px) ;
   border: 1px solid black;
@@ -58,6 +58,7 @@ body {
   font-size:28px;
   text-align: center;
 }
+
 .letf_lower{
   max-height: 89%;
   display: flex;
@@ -66,6 +67,7 @@ body {
   background-color:aliceblue;
   text-align: center;
 }
+
 .nav_bar{
   width: 80%;
   background-color:var(--bule);
@@ -75,9 +77,8 @@ body {
   margin-left: 10%;
   border: 1px solid black;
   /* margin-bottom: 10px; */
-
-
 }
+
 .lower_heading{
   font-size:1.3rem;
   font-weight: 600;
@@ -104,21 +105,14 @@ body {
   background-color:var(--pastal_green);
   /* background-color: #fff5b6f2; */
   border: 1px solid black;
-
-  
 }
+
 .complete_heading{
+  width: fit-content;
   font-size: 0.9rem;
 }
-/* .star_img{
- 
-
-} */
-
 
 /*XXXX======XXXX Right Side of body XXXXXXXXXX=======XXXXXXXXXX    */
-
-
 .right_part{
   display:flex;
   align-content: flex-start;
@@ -133,16 +127,19 @@ body {
   overflow-y: scroll;
 
 }
+
 .right_part::-webkit-scrollbar{
   display: none;
 }
+
 .to_do_card{
   width: 23.5vw;
-  border: 1px solid black;
   height: 35vh;
+  border: 1px solid black;
   background-color: white;
   box-shadow:   6px 6px 0px 0px var(--bule);
 }
+
 .render_card_body{
   width: calc(100%);
   height:calc(79%);
@@ -152,6 +149,7 @@ body {
   overflow-x: hidden;
 
 }
+
 .render_card_body::-webkit-scrollbar{
   display: none;
 }
@@ -159,6 +157,7 @@ body {
 .input_card{
   box-shadow:   6px 6px 0px 0px var(--bule);
 }
+
 .form_card_header,.card_header{
   display: flex;
   align-items: center;
@@ -177,6 +176,7 @@ body {
   
 
 }
+
 .circle-btn{
   width: 14px;
   height: 14px;
@@ -184,11 +184,13 @@ body {
   border-radius: 100%;
   cursor: pointer;
 }
+
 .card_heading{
   font-size: 1.2rem;
   text-align: center;
   width: calc(100% - 64px);
 }
+
 .title_area{
   font-size: 1.1rem;
   width: calc(100% - 73px);
@@ -207,9 +209,11 @@ font-size: 11px;
 background-color: var(--lemmon);
 
 }
+
 .btn2{
   background-color: var(--pastal_pinke);
 }
+
 .btn3{
   background-color: var(--pastal_green);
 
@@ -222,23 +226,19 @@ background-color: var(--lemmon);
   position: relative;
   
 }
+
 textarea{
   margin-top: 1.9px;
   margin-left: 1px;
   padding: 10px;
-  width: calc(100% - 2.5px);
+  width:  calc(100% - 2.5px);
   height:calc(100% - 2.9px);
   background-color: white;
   border: none;
+  resize: none;
   
 }
 
-
-
-
-/* .form_card_body{
-
-} */
 /*  making add img bczs  i do't have net connection 😁 */
 
 .add_img{
@@ -257,14 +257,14 @@ textarea{
   /* display: none; */
 
 }
+
 .min_line1{
   width: 90%;
   height:8px;
   background-color: black;
-  
   border-radius: 10px;
-
 }
+
 .min_line2{
 width: 90%;
 height:8px;
@@ -287,15 +287,11 @@ position: absolute;
 .funtion_btn3{
   background-color: var(--pastal_bule);
 }
-  
-
-
-
 /* star btn animation */
 .star_div{
 height: 43px;
-
 }
+
 .star_img{
   height: 100%;
   width: 100%;
@@ -322,8 +318,68 @@ height: 43px;
   }
 }
 
+@media screen and (max-width:850px) {
+  .right_part,.main_wapper{
+    background-color:var(--pastal_orange);
+  }
+  .left_part{
+    width: 35vw;
+    height: 96vh;
+    margin-right: 1vw;
 
-
+  }
+  .right_part{
+  width: 74vw;
+  height: 100vh;
+  gap: 3%;
+  }
+  .to_do_card{
+  width: 46.5%;
+  height: 35vh;
+  }
+}
+@media screen and (max-width:710px) {
+  .main_wapper{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:var(--pastal_orange);
+    overflow-y: hidden;
+    
+    
+  }
+  .left_part{
+    width: 45vw;
+    height: 90vh;
+    margin-right: 1vw;
+  }
+  .left_div{
+    padding-bottom: 10px;
+  }
+  .right_part{
+  width: 55vw;
+  height: 100vh;
+  gap: 3%;
+  }
+  .to_do_card{
+  width: 90%;
+  height: 28vh;
+  }
+  .add_img{
+  width: 2.5rem;
+  height: 2.5rem;
+  }
+  .min_line1{
+    width: 85%;
+    height: 0.2em;;
+   
+  }
+  
+  .min_line2{
+  width: 85%;
+  height:0.2em;
+  
+  }
+}
 
 /* 
 .form-div{
