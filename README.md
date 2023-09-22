@@ -1,19 +1,9 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-To Do :ist https://to-do-list-piyush-kushwaha413.vercel.app/
-![image](https://github.com/Piyush-Kushwaha413/to_do_list/assets/121694293/b827257b-b20e-4bd8-b047-071ea93145fc)
 
-➕ Add btn  : open form
-Form btn function doc😅
- 🟡 btn : ok 
- 🔴 btn : function  not set 
- 🟢 btn : function now not set 
 
-Added task btn function doc 😅
-🟡 btn : ok 
- 🔴 btn : remove task 
- 🟢 btn : edit the task
 
 ## Getting Started
+
 
 First, run the development server:
 
@@ -30,6 +20,20 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+## About the projectTo Do :ist https://to-do-list-piyush-kushwaha413.vercel.app/
+![image](https://github.com/Piyush-Kushwaha413/to_do_list/assets/121694293/b827257b-b20e-4bd8-b047-071ea93145fc)
+
+➕ Add btn  : open form
+Form btn function doc😅
+ 🟡 btn : ok 
+ 🔴 btn : function  not set 
+ 🟢 btn : function now not set 
+
+Added task btn function doc 😅
+🟡 btn : ok 
+ 🔴 btn : remove task 
+ 🟢 btn : edit the task
 
 ## Learn More
 
