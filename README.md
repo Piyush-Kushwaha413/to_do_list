@@ -21,7 +21,8 @@ You can start editing the page by modifying `app/page.js`. The page auto-updates
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## About the projectTo Do :ist https://to-do-list-piyush-kushwaha413.vercel.app/
+## About the project
+## To Do :ist https://to-do-list-piyush-kushwaha413.vercel.app/
 ![image](https://github.com/Piyush-Kushwaha413/to_do_list/assets/121694293/b827257b-b20e-4bd8-b047-071ea93145fc)
 
 ➕ Add btn  : open form
